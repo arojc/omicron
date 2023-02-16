@@ -2,6 +2,7 @@ import os
 
 from pingonizer import Pingonizer
 from drawer import Drawer
+from spoofer import Spoofer
 
 
 def write_the_files(N) :
@@ -57,12 +58,15 @@ def fill_the_file_with_fibbonacci () :
 #for i in range(10) :
     #p.run_the_thread_directly("192.168.4.90", i, 3)
 
-p = Pingonizer()
-for i in range(100) :
-    p.run_the_thread_directly("192.168.4.90", 50000+i, 30)
+#p = Pingonizer()
+#for i in range(100) :
+    #p.run_the_thread_directly("192.168.4.90", 50000+i, 30)
 
-d = Drawer(10)
-d.draw_wrapper()
+#d = Drawer(10)
+#d.draw_wrapper()
+
+s = Spoofer()
+s.find_all_new_ips()
 
 
 

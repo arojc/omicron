@@ -1,10 +1,8 @@
 import os
-import subprocess
 import threading
 import time
 
 import pythonping
-from matplotlib import style, pyplot as plt, animation as animation
 
 
 class Pingonizer :
